@@ -1,88 +1,109 @@
-# 🛒 Superstore Sales Dashboard
+# 📊 Superstore Sales Dashboard — Power BI
 
-An interactive Power BI dashboard built on the Superstore dataset, providing end-to-end visibility into sales performance, regional trends, and profitability across customer segments, product categories, and shipping modes.
+![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![DAX](https://img.shields.io/badge/DAX-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)
+![CSV](https://img.shields.io/badge/Dataset-CSV-green?style=for-the-badge)
+
+An interactive, two-page Power BI dashboard built on the Superstore dataset — transforming raw retail transaction data into clear business insights on sales, profit, regional performance, and customer behaviour.
 
 ---
 
-## 📊 Dashboard Overview
-
-The report is split into two pages:
+## 🖼️ Dashboard Preview
 
 ### Page 1 — Sales & Profit Overview
-- **KPI Cards**: Total Sales (1.10M), Total Revenue (942.67K), Total Profit (132.52K), Profit Margin (12.05%), Total Orders (5,009), Total Quantity (19K)
-- **Sales by Customer Segment**: Donut chart breaking down Consumer (51%), Corporate (31%), and Home Office (18%) segments
-- **Sales by Category**: Donut chart across Furniture (34%), Office Supplies (31%), and Technology (35%)
-- **Sales by Ship Mode**: Bar chart comparing Standard Class, Second Class, First Class, and Same Day
-- **Discount vs. Profit Scatter**: Visual correlation between discount rates and profit margins
-- **Sales by Month and Year**: Area/line chart tracking seasonal trends
-- **Sales by Quarter and Category**: Stacked bar chart highlighting Q4 as the peak quarter
-- **Sales by State**: Filled US map showing geographic distribution
+![Sales and Profit Overview](project1.png)
 
 ### Page 2 — Product & Regional Performance
-- **Sales Trend Over Time**: Waterfall chart showing year-over-year growth from 2014 to 2017
-- **Total Sales by Year and Category**: Small multiples line charts for Furniture, Office Supplies, and Technology
-- **Sales by Sub-Category**: Horizontal bar chart — Chairs and Phones lead at ~167K and ~162K
-- **Sales by Region**: Dot plot comparing Central, East, South, and West
-- **Top 10 Cities by Sales**: Ranked table led by Wilmington
-- **Top 10 Products by Sales**: Ranked product list
-- **Month-over-Month Sales Growth**: Line chart across years
-- **Sales by Region and Profit**: Map with regional profit segmentation
+![Product and Regional Performance](project2.png)
 
 ---
 
-## 🔧 Tools & Technologies
+## 📁 Repository Files
 
-| Tool | Purpose |
-|------|---------|
-| **Power BI Desktop** | Dashboard development & visualizations |
-| **DAX** | Calculated measures (Profit Margin %, MoM Growth, etc.) |
-| **Power Query** | Data transformation & cleaning |
-| **Superstore Dataset** | Source data (orders, returns, customers) |
+| File | Description |
+|------|-------------|
+| `final-dashborad-sales.pbix` | Power BI report file |
+| `Sample - Superstore.csv` | Source dataset |
+| `project1.png` | Screenshot — Sales & Profit Overview |
+| `project2.png` | Screenshot — Product & Regional Performance |
+
+---
+
+## 📌 Dashboard Pages
+
+### Page 1 — Sales & Profit Overview
+
+| Visual | Description |
+|--------|-------------|
+| 📦 KPI Cards | Total Sales: **1.10M** · Revenue: **942.67K** · Profit: **132.52K** · Margin: **12.05%** · Orders: **5,009** · Quantity: **19K** |
+| 🍩 Sales by Customer Segment | Consumer 51% · Corporate 31% · Home Office 18% |
+| 🍩 Sales by Category | Technology 35% · Furniture 34% · Office Supplies 31% |
+| 📊 Sales by Ship Mode | Standard Class leads, Same Day is lowest |
+| 🔵 Discount vs Profit | Scatter plot showing how heavy discounting hurts margins |
+| 📈 Sales by Month & Year | Seasonal trend line across all years |
+| 📊 Sales by Quarter & Category | Q4 is consistently the strongest quarter |
+| 🗺️ Sales by State | US filled map — West Coast and East Coast dominate |
+
+### Page 2 — Product & Regional Performance
+
+| Visual | Description |
+|--------|-------------|
+| 📊 Sales Trend Over Time | Waterfall chart: growth from **0.22M (2015)** to **1.10M (2017)** |
+| 📉 Sales by Year & Category | Small multiples for Furniture, Office Supplies, Technology |
+| 📊 Sales by Sub-Category | Chairs **167K** and Phones **162K** lead all sub-categories |
+| 🔵 Sales by Region | West & East outperform Central & South |
+| 🏙️ Top 10 Cities | Wilmington tops at **$3,096.96** |
+| 📦 Top 10 Products | Xerox, Xiaomi, XtraLife products in top positions |
+| 📈 Month-over-Month Growth | Trend line across 2014–2017 |
+| 🗺️ Sales by Region & Profit | Map with regional profit overlay |
 
 ---
 
 ## 🎛️ Filters & Slicers
 
-- **Year Slicer**: 2014, 2015, 2016, 2017
-- **Region Slicer**: Central, East, South, West
-- **Segment Slicer**: Consumer, Corporate, Home Office
-- **Category Slicer**: Furniture, Office Supplies, Technology
+- **Year** — 2014 · 2015 · 2016 · 2017
+- **Region** — Central · East · South · West
+- **Segment** — Consumer · Corporate · Home Office
+- **Category** — Furniture · Office Supplies · Technology
 
 ---
 
-## 📁 Project Structure
+## 🔧 Tools & Technologies
 
-```
-superstore-sales-dashboard/
-│
-├── SuperstoreDashboard.pbix      # Power BI report file
-├── data/
-│   └── superstore.csv            # Source dataset
-├── screenshots/
-│   ├── page1_sales_profit.png
-│   └── page2_product_regional.png
-└── README.md
-```
-
----
-
-## 🚀 Getting Started
-
-1. Clone this repository
-2. Open `SuperstoreDashboard.pbix` in Power BI Desktop
-3. If prompted, update the data source path to point to `data/superstore.csv`
-4. Refresh the data and explore!
+| Tool | Usage |
+|------|-------|
+| **Power BI Desktop** | Report design & all visualizations |
+| **DAX** | KPI measures — Profit Margin %, MoM Growth, Running Totals |
+| **Power Query (M)** | Data cleaning & transformation |
+| **Superstore CSV** | 4-year retail dataset (orders, categories, regions) |
 
 ---
 
 ## 💡 Key Insights
 
-- **Technology** drives the highest sales but discounting significantly erodes margins
-- **Q4** is consistently the strongest quarter across all categories
-- **Consumer segment** accounts for over half of all revenue
-- **West and East** regions outperform Central and South in total sales
-- Heavy discounting (>0.4) is strongly correlated with negative profit
+> **1.** Discounts above **40%** consistently produce **negative profit** — visible clearly in the scatter plot.
+
+> **2.** **Q4** is the strongest quarter every year across all product categories.
+
+> **3.** The **Consumer segment** drives over **half** of total revenue.
+
+> **4.** **Technology** has the highest sales but is most sensitive to discount-driven margin erosion.
+
+> **5.** **Chairs and Phones** are the top two sub-categories — strong targets for upselling strategy.
 
 ---
 
-![Product & Regional Performance](screenshots/page2_product_regional.png)
+## 🚀 How to Run
+
+1. Clone or download this repository
+2. Open `final-dashborad-sales.pbix` in **Power BI Desktop**
+3. If data source path breaks, redirect to `Sample - Superstore.csv` in Power Query
+4. Hit **Refresh** — all visuals update automatically
+5. Use the slicers to explore by year, region, segment, or category
+
+---
+
+## 👩‍💻 Author
+
+**Ayesha Sana**  
+[GitHub Profile](https://github.com/ayeshasana0355)
