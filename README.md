@@ -85,8 +85,4 @@ superstore-sales-dashboard/
 
 ---
 
-
-
-**Product & Regional Performance**
-
 ![Product & Regional Performance](screenshots/page2_product_regional.png)
